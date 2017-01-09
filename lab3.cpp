@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+//Bitwise operations
 
 //bitwise NOT
 int iMyNumber1 = 18;
@@ -24,7 +25,7 @@ int iMyNumber8 = 907;
 int iMyNumber9 = -95;
 
 
-int main () {
+int main() {
   int iBitwiseNotResult = ~iMyNumber1;
   cout << "iBitwiseNotResult: " << iBitwiseNotResult << "\n";
 

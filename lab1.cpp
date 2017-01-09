@@ -1,5 +1,7 @@
 #include <iostream>
 using namespace std;
+//ints and floats
+//variant #1
 
 const int iMyConst1 = 800;
 
