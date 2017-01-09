@@ -3,24 +3,24 @@ using namespace std;
 //Pointers
 //variant #4
 
-ushort uMyNumber1 = 87;
+ushort usMyNumber1 = 87;
 int iMyNumber2 = 11239;
 float fMyNumber3 = -532.98987;
 
 int main() {
-  ushort* upMyNumber1 = &uMyNumber1;
+  ushort* uspMyNumber1 = &usMyNumber1;
   int* ipMyNumber2 = &iMyNumber2;
   float* fpMyNumber3 = &fMyNumber3;
 
-  cout << "upMyNumber1: " << upMyNumber1 << "\n"; //memory address
+  cout << "uspMyNumber1: " << uspMyNumber1 << "\n"; //memory address
 
   //dereference
-  ushort uDereferenced = *upMyNumber1;
+  ushort uDereferenced = *uspMyNumber1;
   int iDereferenced = *ipMyNumber2;
   float fDereferenced = *fpMyNumber3;
 
   //Pointer sizes
-  int iMyNumber1PointerSize = sizeof upMyNumber1;
+  int iMyNumber1PointerSize = sizeof uspMyNumber1;
   int iMyNumber2PointerSize = sizeof ipMyNumber2;
   int iMyNumber3PointerSize = sizeof fpMyNumber3;
 
@@ -30,7 +30,7 @@ int main() {
 
   //real vars sizes
 
-  int iMyNumber1Size = sizeof uMyNumber1;
+  int iMyNumber1Size = sizeof usMyNumber1;
   int iMyNumber2Size = sizeof iMyNumber2;
   int iMyNumber3Size = sizeof fMyNumber3;
 
