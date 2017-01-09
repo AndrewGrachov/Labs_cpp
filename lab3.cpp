@@ -1,39 +1,47 @@
 #include <iostream>
 using namespace std;
 
-const int iMyConst1 = 800;
+//bitwise NOT
+int iMyNumber1 = 18;
 
-int iMyVar1 = 800,
-    iMyVar2,
-    iMyVar3;
+//bitwise AND
+int iMyNumber2 = 90;
+int iMyNumber3 = 122;
 
-short sMyShortVar1,
-      sMyShortVar2,
-      sMyShortVar3;
+//bitwise OR
+int iMyNumber4 = 134;
+int iMyNumber5 = 65;
 
-long lMyLongVar1 = 3475898789,
-     lMyLongVar2,
-     lMyLongVar3 = 567;
+//bitwise XOR
+int iMyNumber6 = 34;
+int iMyNumber7 = 78;
 
-unsigned short usMyUnsignedShortVar1 = 288,
-       usMyUnsignedShortVar2,
-       usMyUnsignedShortVar3;
+const int shift = 1;
+//bitwise left shift
+int iMyNumber8 = 907;
 
-int main() {
-  //warning here
-  iMyVar2 = 67.8;
-  cout << "iMyVar2: " << iMyVar2 <<"\n";
-  iMyVar3 = -1275978;
+//bitwise right shift
+int iMyNumber9 = -95;
 
-  cout << "iMyVar3: " << iMyVar3 <<"\n";;
-  //compiler warning here, float conversion
-  lMyLongVar2 = -45.78;
 
-  cout << "lMyLongVar2: " << lMyLongVar2 <<"\n";;
-  //compiler warning, out of range
-  usMyUnsignedShortVar2 = 156378;
+int main () {
+  int iBitwiseNotResult = ~iMyNumber1;
+  cout << "iBitwiseNotResult: " << iBitwiseNotResult << "\n";
 
-  usMyUnsignedShortVar3 = -40;
+  int iBitwiseAndResult = iMyNumber2 & iMyNumber3;
+  cout << "iBitwiseAndResult: " << iBitwiseAndResult << "\n";
+
+  int iBitwiseOrResult = iMyNumber4 | iMyNumber5;
+  cout << "iBitwiseOrResult: " << iBitwiseOrResult << "\n";
+
+  int iBitwiseXorResult = iMyNumber6 ^ iMyNumber7;
+  cout << "iBitwiseXorResult: " << iBitwiseXorResult << "\n";
+
+  int iBitwiseLeftShiftResult = iMyNumber8 << shift;
+  cout << "iBitwiseLeftShiftResult: " << iBitwiseLeftShiftResult << "\n";
+
+  int iBitwiseRightShiftResult = iMyNumber9 >> shift;
+  cout << "iBitwiseRightShiftResult: " << iBitwiseRightShiftResult << "\n";
 
   return 0;
 }
