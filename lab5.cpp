@@ -14,6 +14,11 @@ int main() {
 
   cout << "upMyNumber1: " << upMyNumber1 << "\n"; //memory address
 
+  //dereference
+  ushort uDereferenced = *upMyNumber1;
+  int iDereferenced = *ipMyNumber2;
+  float fDereferenced = *fpMyNumber3;
+
   //Pointer sizes
   int iMyNumber1PointerSize = sizeof upMyNumber1;
   int iMyNumber2PointerSize = sizeof ipMyNumber2;
